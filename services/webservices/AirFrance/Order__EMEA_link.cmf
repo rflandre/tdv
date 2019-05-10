@@ -1,0 +1,2219 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:ee60c033-5ad9-4101-bb63-a123f9bbac30 -->
+<metadata name="Order_EMEA" path="/services/webservices/AirFrance/Order_EMEA" type="LINK" subtype="NONE" changeToken="0" virtual="true">
+  <security>
+    <owner user="admin" domain="composite"/>
+    <privilege group="us" domain="composite" privileges="WRITE SELECT UPDATE INSERT DELETE GRANT"/>
+    <privilege group="emea" domain="composite" privileges="WRITE SELECT UPDATE INSERT DELETE GRANT"/>
+  </security>
+  <dependency target="/shared/AirFrance/Application_layer/Order_EMEA" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="Import ACCOUNT_ASSIGNMENT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Import DELIVERY_ADDRESS">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Import HEADER_TEXT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Import ITEM_TEXT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Import PURCHASEORDER">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="Import SERVICES">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Import VERSION">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Export POEXPIMPHEADER TRANSPORT_MODE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Export POEXPIMPHEADER CUSTOMS">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="Export POHEADER PO_NUMBER">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="Export POHEADER COMP_CODE">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="Export POHEADER DOC_TYPE">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="Export POHEADER DELETE_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Export POHEADER STATUS">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Export POHEADER CREAT_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="Export POHEADER CREATED_BY">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="Export POHEADER ITEM_INTVL">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="Export POHEADER VENDOR">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="Export POHEADER LANGU">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Export POHEADER LANGU_ISO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="Export POHEADER PMNTTRMS">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="Export POHEADER DSCNT1_TO">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="0"/>
+      </element>
+      <element name="Export POHEADER DSCNT2_TO">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="0"/>
+      </element>
+      <element name="Export POHEADER DSCNT3_TO">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="0"/>
+      </element>
+      <element name="Export POHEADER DSCT_PCT1">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="3"/>
+      </element>
+      <element name="Export POHEADER DSCT_PCT2">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="3"/>
+      </element>
+      <element name="Export POHEADER PURCH_ORG">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="Export POHEADER PUR_GROUP">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="Export POHEADER CURRENCY">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="Export POHEADER CURRENCY_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="Export POHEADER EXCH_RATE">
+        <datatype type="DECIMAL" maxDigits="9" maxFractionalDigits="5"/>
+      </element>
+      <element name="Export POHEADER EX_RATE_FX">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Export POHEADER DOC_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="Export POHEADER VPER_START">
+        <datatype type="DATE"/>
+      </element>
+      <element name="Export POHEADER VPER_END">
+        <datatype type="DATE"/>
+      </element>
+      <element name="Export POHEADER WARRANTY">
+        <datatype type="DATE"/>
+      </element>
+      <element name="Export POHEADER QUOTATION">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="Export POHEADER QUOT_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="Export POHEADER REF_1">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="Export POHEADER SALES_PERS">
+        <datatype type="STRING" maxLength="30"/>
+      </element>
+      <element name="Export POHEADER TELEPHONE">
+        <datatype type="STRING" maxLength="16"/>
+      </element>
+      <element name="Export POHEADER SUPPL_VEND">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="Export POHEADER CUSTOMER">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="Export POHEADER AGREEMENT">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="Export POHEADER GR_MESSAGE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Export POHEADER SUPPL_PLNT">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="Export POHEADER INCOTERMS1">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="Export POHEADER INCOTERMS2">
+        <datatype type="STRING" maxLength="28"/>
+      </element>
+      <element name="Export POHEADER COLLECT_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="Export POHEADER DIFF_INV">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="Export POHEADER OUR_REF">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="Export POHEADER LOGSYSTEM">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="Export POHEADER SUBITEMINT">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="Export POHEADER PO_REL_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="Export POHEADER REL_STATUS">
+        <datatype type="STRING" maxLength="8"/>
+      </element>
+      <element name="Export POHEADER VAT_CNTRY">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="Export POHEADER VAT_CNTRY_ISO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="Export POHEADER REASON_CANCEL">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="Export POHEADER REASON_CODE">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="ALLVERSIONS DOC_TYPE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="ALLVERSIONS DOC_NUMBER">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="ALLVERSIONS ITEM_NUMBER">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="ALLVERSIONS VERSION">
+        <datatype type="STRING" maxLength="8"/>
+      </element>
+      <element name="ALLVERSIONS CREATED_BY">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="ALLVERSIONS CR_ON">
+        <datatype type="DATE"/>
+      </element>
+      <element name="ALLVERSIONS REC_TIME">
+        <datatype type="TIME"/>
+      </element>
+      <element name="ALLVERSIONS RELEASED_BY">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="ALLVERSIONS RELEASE_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="ALLVERSIONS RELEASE_TIME">
+        <datatype type="TIME"/>
+      </element>
+      <element name="ALLVERSIONS RELEASEBY_PUR">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="ALLVERSIONS RELEASEDATE_PUR">
+        <datatype type="DATE"/>
+      </element>
+      <element name="ALLVERSIONS RELEASETIME_PUR">
+        <datatype type="TIME"/>
+      </element>
+      <element name="ALLVERSIONS REASON">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="ALLVERSIONS DESCRIPTION">
+        <datatype type="STRING" maxLength="60"/>
+      </element>
+      <element name="ALLVERSIONS REQ_BY_EXT">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="ALLVERSIONS REQ_BY">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="ALLVERSIONS NET_VALUE">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="2"/>
+      </element>
+      <element name="ALLVERSIONS VALUE_CHANGED">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="2"/>
+      </element>
+      <element name="ALLVERSIONS CURRENCY">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="ALLVERSIONS CURRENCY_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="ALLVERSIONS POST_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="ALLVERSIONS COMPLETED">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="ALLVERSIONS STATUS">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="ALLVERSIONS DELETE_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="ALLVERSIONS STATUS_DOC_OLD">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="EXTENSIONOUT STRUCTURE">
+        <datatype type="STRING" maxLength="30"/>
+      </element>
+      <element name="EXTENSIONOUT VALUEPART1">
+        <datatype type="STRING" maxLength="240"/>
+      </element>
+      <element name="EXTENSIONOUT VALUEPART2">
+        <datatype type="STRING" maxLength="240"/>
+      </element>
+      <element name="EXTENSIONOUT VALUEPART3">
+        <datatype type="STRING" maxLength="240"/>
+      </element>
+      <element name="EXTENSIONOUT VALUEPART4">
+        <datatype type="STRING" maxLength="240"/>
+      </element>
+      <element name="POACCOUNT PO_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POACCOUNT SERIAL_NO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POACCOUNT DELETE_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POACCOUNT CREAT_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POACCOUNT QUANTITY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POACCOUNT DISTR_PERC">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="1"/>
+      </element>
+      <element name="POACCOUNT NET_VALUE">
+        <datatype type="DECIMAL" maxDigits="29" maxFractionalDigits="9"/>
+      </element>
+      <element name="POACCOUNT GL_ACCOUNT">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POACCOUNT BUS_AREA">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POACCOUNT COSTCENTER">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POACCOUNT SD_DOC">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POACCOUNT ITM_NUMBER">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POACCOUNT SCHED_LINE">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POACCOUNT ASSET_NO">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="POACCOUNT SUB_NUMBER">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POACCOUNT ORDERID">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="POACCOUNT GR_RCPT">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="POACCOUNT UNLOAD_PT">
+        <datatype type="STRING" maxLength="25"/>
+      </element>
+      <element name="POACCOUNT CO_AREA">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POACCOUNT COSTOBJECT">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="POACCOUNT PROFIT_CTR">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POACCOUNT WBS_ELEMENT">
+        <datatype type="STRING" maxLength="24"/>
+      </element>
+      <element name="POACCOUNT NETWORK">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="POACCOUNT RL_EST_KEY">
+        <datatype type="STRING" maxLength="8"/>
+      </element>
+      <element name="POACCOUNT PART_ACCT">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POACCOUNT CMMT_ITEM">
+        <datatype type="STRING" maxLength="14"/>
+      </element>
+      <element name="POACCOUNT REC_IND">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POACCOUNT FUNDS_CTR">
+        <datatype type="STRING" maxLength="16"/>
+      </element>
+      <element name="POACCOUNT FUND">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POACCOUNT FUNC_AREA">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POACCOUNT REF_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POACCOUNT TAX_CODE">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POACCOUNT TAXJURCODE">
+        <datatype type="STRING" maxLength="15"/>
+      </element>
+      <element name="POACCOUNT NOND_ITAX">
+        <datatype type="DECIMAL" maxDigits="29" maxFractionalDigits="9"/>
+      </element>
+      <element name="POACCOUNT ACTTYPE">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POACCOUNT CO_BUSPROC">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="POACCOUNT RES_DOC">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POACCOUNT RES_ITEM">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POACCOUNT ACTIVITY">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POACCOUNT GRANT_NBR">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="POACCOUNT CMMT_ITEM_LONG">
+        <datatype type="STRING" maxLength="24"/>
+      </element>
+      <element name="POACCOUNT FUNC_AREA_LONG">
+        <datatype type="STRING" maxLength="16"/>
+      </element>
+      <element name="POADDRDELIVERY PO_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POADDRDELIVERY ADDR_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY FORMOFADDR">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="POADDRDELIVERY NAME">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POADDRDELIVERY NAME_2">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POADDRDELIVERY NAME_3">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POADDRDELIVERY NAME_4">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POADDRDELIVERY C_O_NAME">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POADDRDELIVERY CITY">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POADDRDELIVERY DISTRICT">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POADDRDELIVERY CITY_NO">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="POADDRDELIVERY POSTL_COD1">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY POSTL_COD2">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY POSTL_COD3">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY PO_BOX">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY PO_BOX_CIT">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POADDRDELIVERY DELIV_DIS">
+        <datatype type="STRING" maxLength="15"/>
+      </element>
+      <element name="POADDRDELIVERY STREET">
+        <datatype type="STRING" maxLength="60"/>
+      </element>
+      <element name="POADDRDELIVERY STREET_NO">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="POADDRDELIVERY STR_ABBR">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POADDRDELIVERY HOUSE_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY STR_SUPPL1">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POADDRDELIVERY STR_SUPPL2">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POADDRDELIVERY LOCATION">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POADDRDELIVERY BUILDING">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY FLOOR">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY ROOM_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY COUNTRY">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POADDRDELIVERY LANGU">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POADDRDELIVERY REGION">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POADDRDELIVERY SORT1">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="POADDRDELIVERY SORT2">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="POADDRDELIVERY TIME_ZONE">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POADDRDELIVERY TAXJURCODE">
+        <datatype type="STRING" maxLength="15"/>
+      </element>
+      <element name="POADDRDELIVERY ADR_NOTES">
+        <datatype type="STRING" maxLength="50"/>
+      </element>
+      <element name="POADDRDELIVERY COMM_TYPE">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POADDRDELIVERY TEL1_NUMBR">
+        <datatype type="STRING" maxLength="30"/>
+      </element>
+      <element name="POADDRDELIVERY TEL1_EXT">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY FAX_NUMBER">
+        <datatype type="STRING" maxLength="30"/>
+      </element>
+      <element name="POADDRDELIVERY FAX_EXTENS">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY STREET_LNG">
+        <datatype type="STRING" maxLength="60"/>
+      </element>
+      <element name="POADDRDELIVERY DISTRCT_NO">
+        <datatype type="STRING" maxLength="8"/>
+      </element>
+      <element name="POADDRDELIVERY CHCKSTATUS">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POADDRDELIVERY PBOXCIT_NO">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="POADDRDELIVERY TRANSPZONE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY HOUSE_NO2">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POADDRDELIVERY E_MAIL">
+        <datatype type="STRING" maxLength="241"/>
+      </element>
+      <element name="POADDRDELIVERY STR_SUPPL3">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POADDRDELIVERY TITLE">
+        <datatype type="STRING" maxLength="30"/>
+      </element>
+      <element name="POADDRDELIVERY COUNTRYISO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POADDRDELIVERY LANGU_ISO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POADDRDELIVERY BUILD_LONG">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="POADDRDELIVERY REGIOGROUP">
+        <datatype type="STRING" maxLength="8"/>
+      </element>
+      <element name="POCOMPONENTS PO_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POCOMPONENTS SCHED_LINE">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POCOMPONENTS ITEM_NO">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POCOMPONENTS MATERIAL">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="POCOMPONENTS ENTRY_QUANTITY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POCOMPONENTS ENTRY_UOM">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCOMPONENTS ENTRY_UOM_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCOMPONENTS FIXED_QUAN">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOMPONENTS PLANT">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POCOMPONENTS REQ_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POCOMPONENTS CHANGE_ID">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOMPONENTS MATERIAL_EXTERNAL">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POCOMPONENTS MATERIAL_GUID">
+        <datatype type="STRING" maxLength="32"/>
+      </element>
+      <element name="POCOMPONENTS MATERIAL_VERSION">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POCOND CONDITION_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POCOND ITM_NUMBER">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POCOND COND_ST_NO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCOND COND_COUNT">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POCOND COND_TYPE">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POCOND COND_VALUE">
+        <datatype type="DECIMAL" maxDigits="29" maxFractionalDigits="9"/>
+      </element>
+      <element name="POCOND CURRENCY">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POCOND CURRENCY_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCOND COND_UNIT">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCOND COND_UNIT_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCOND COND_P_UNT">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="0"/>
+      </element>
+      <element name="POCOND APPLICATIO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POCOND CONPRICDAT">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POCOND CALCTYPCON">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND CONBASEVAL">
+        <datatype type="DECIMAL" maxDigits="29" maxFractionalDigits="9"/>
+      </element>
+      <element name="POCOND CONEXCHRAT">
+        <datatype type="DECIMAL" maxDigits="9" maxFractionalDigits="5"/>
+      </element>
+      <element name="POCOND NUMCONVERT">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="0"/>
+      </element>
+      <element name="POCOND DENOMINATO">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="0"/>
+      </element>
+      <element name="POCOND CONDTYPE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND STAT_CON">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND SCALETYPE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND ACCRUALS">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND CONINVOLST">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND CONDORIGIN">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND GROUPCOND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND COND_UPDAT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND ACCESS_SEQ">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POCOND CONDCOUNT">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POCOND CONDCNTRL">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND CONDISACTI">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND CONDCLASS">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND FACTBASVAL">
+        <datatype type="DECIMAL" maxDigits="308" maxFractionalDigits="15"/>
+      </element>
+      <element name="POCOND SCALEBASIN">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND SCALBASVAL">
+        <datatype type="DECIMAL" maxDigits="29" maxFractionalDigits="9"/>
+      </element>
+      <element name="POCOND UNITMEASUR">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCOND UNITMEASUR_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCOND CURRENCKEY">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POCOND CURRENCKEY_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCOND CONDINCOMP">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND CONDCONFIG">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND CONDCHAMAN">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND COND_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POCOND CHANGE_ID">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCOND VENDOR_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POCONDHEADER CONDITION_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POCONDHEADER ITM_NUMBER">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POCONDHEADER COND_ST_NO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCONDHEADER COND_COUNT">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POCONDHEADER COND_TYPE">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POCONDHEADER COND_VALUE">
+        <datatype type="DECIMAL" maxDigits="29" maxFractionalDigits="9"/>
+      </element>
+      <element name="POCONDHEADER CURRENCY">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POCONDHEADER CURRENCY_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCONDHEADER COND_UNIT">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCONDHEADER COND_UNIT_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCONDHEADER COND_P_UNT">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="0"/>
+      </element>
+      <element name="POCONDHEADER APPLICATIO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POCONDHEADER CONPRICDAT">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POCONDHEADER CALCTYPCON">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER CONBASEVAL">
+        <datatype type="DECIMAL" maxDigits="29" maxFractionalDigits="9"/>
+      </element>
+      <element name="POCONDHEADER CONEXCHRAT">
+        <datatype type="DECIMAL" maxDigits="9" maxFractionalDigits="5"/>
+      </element>
+      <element name="POCONDHEADER NUMCONVERT">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="0"/>
+      </element>
+      <element name="POCONDHEADER DENOMINATO">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="0"/>
+      </element>
+      <element name="POCONDHEADER CONDTYPE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER STAT_CON">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER SCALETYPE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER ACCRUALS">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER CONINVOLST">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER CONDORIGIN">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER GROUPCOND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER COND_UPDAT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER ACCESS_SEQ">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POCONDHEADER CONDCOUNT">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POCONDHEADER CONDCNTRL">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER CONDISACTI">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER CONDCLASS">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER FACTBASVAL">
+        <datatype type="DECIMAL" maxDigits="308" maxFractionalDigits="15"/>
+      </element>
+      <element name="POCONDHEADER SCALEBASIN">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER SCALBASVAL">
+        <datatype type="DECIMAL" maxDigits="29" maxFractionalDigits="9"/>
+      </element>
+      <element name="POCONDHEADER UNITMEASUR">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCONDHEADER UNITMEASUR_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCONDHEADER CURRENCKEY">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POCONDHEADER CURRENCKEY_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POCONDHEADER CONDINCOMP">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER CONDCONFIG">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER CONDCHAMAN">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER COND_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POCONDHEADER CHANGE_ID">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONDHEADER VENDOR_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POCONFIRMATION PO_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POCONFIRMATION CONF_SER">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POCONFIRMATION CONF_TYPE">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POCONFIRMATION CONF_NAME">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="POCONFIRMATION DEL_DATCAT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONFIRMATION DEL_DATCAT_EXT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONFIRMATION DELIV_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POCONFIRMATION DELIV_TIME">
+        <datatype type="TIME"/>
+      </element>
+      <element name="POCONFIRMATION QUANTITY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POCONFIRMATION DELETE_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONFIRMATION DISPO_REL">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONFIRMATION RECEIPT_REL">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONFIRMATION EXT_DOC">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="POCONFIRMATION DELIV_NUMB">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POCONFIRMATION DELIV_ITEM">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POCONFIRMATION EXT_DOC_LONG">
+        <datatype type="STRING" maxLength="35"/>
+      </element>
+      <element name="POCONTRACTLIMITS PCKG_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POCONTRACTLIMITS LINE_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POCONTRACTLIMITS CON_NUMBER">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POCONTRACTLIMITS CON_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POCONTRACTLIMITS LIMIT">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POCONTRACTLIMITS NO_LIMIT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONTRACTLIMITS PRICE_CHG">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POCONTRACTLIMITS SHORT_TEXT">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POCONTRACTLIMITS DELETE_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POEXPIMPITEM PO_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POEXPIMPITEM BUSINESS_TRANSACTION_TYPE">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POEXPIMPITEM EXPORT_IMPORT_PROCEDURE">
+        <datatype type="STRING" maxLength="8"/>
+      </element>
+      <element name="POEXPIMPITEM COUNTRYORI">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POEXPIMPITEM COUNTRYORI_ISO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POEXPIMPITEM REGIONORIG">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POEXPIMPITEM COMM_CODE">
+        <datatype type="STRING" maxLength="17"/>
+      </element>
+      <element name="POEXPIMPITEM SHIPPING_COUNTRY">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POEXPIMPITEM SHIPPING_COUNTRY_ISO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POHISTORY PO_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POHISTORY SERIAL_NO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POHISTORY PROCESS_ID">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POHISTORY DOC_YEAR">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POHISTORY MAT_DOC">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POHISTORY MATDOC_ITM">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POHISTORY HIST_TYPE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POHISTORY MOVE_TYPE">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POHISTORY PSTNG_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POHISTORY QUANTITY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY VAL_LOCCUR">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY VAL_FORCUR">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY CURRENCY">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POHISTORY CL_VAL_LOC">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY BLOCKED_QY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY BL_QTY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY DB_CR_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POHISTORY VAL_TYPE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POHISTORY NO_MORE_GR">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POHISTORY REF_DOC_NO">
+        <datatype type="STRING" maxLength="16"/>
+      </element>
+      <element name="POHISTORY REF_DOC_YR">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POHISTORY REF_DOC">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POHISTORY REF_DOC_IT">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POHISTORY MOVE_REAS">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POHISTORY ENTRY_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POHISTORY ENTRY_TIME">
+        <datatype type="TIME"/>
+      </element>
+      <element name="POHISTORY IVVAL_LOC">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY IVVAL_FOR">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY MATERIAL">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="POHISTORY PLANT">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POHISTORY CONF_SER">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POHISTORY CONDITION">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POHISTORY TAX_CODE">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POHISTORY DELIV_QTY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY DELIV_UNIT">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POHISTORY PUR_MAT">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="POHISTORY LOC_CURR">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POHISTORY BATCH">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POHISTORY DOC_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POHISTORY CURRENCY_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POHISTORY LOC_CURR_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POHISTORY DELIV_UNIT_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POHISTORY MATERIAL_EXTERNAL">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POHISTORY MATERIAL_GUID">
+        <datatype type="STRING" maxLength="32"/>
+      </element>
+      <element name="POHISTORY MATERIAL_VERSION">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POHISTORY PUR_MAT_EXTERNAL">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POHISTORY PUR_MAT_GUID">
+        <datatype type="STRING" maxLength="32"/>
+      </element>
+      <element name="POHISTORY PUR_MAT_VERSION">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POHISTORY REF_DOC_NO_LONG">
+        <datatype type="STRING" maxLength="35"/>
+      </element>
+      <element name="POHISTORY_TOTALS PO_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POHISTORY_TOTALS SERIAL_NO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POHISTORY_TOTALS WITHDR_QTY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY_TOTALS BLOCKED_QY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY_TOTALS BL_QTY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY_TOTALS DELIV_QTY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY_TOTALS PO_PR_QNT">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY_TOTALS VAL_GR_LOC">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY_TOTALS VAL_GR_FOR">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY_TOTALS IV_QTY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY_TOTALS IV_QTY_PO">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY_TOTALS VAL_IV_LOC">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY_TOTALS VAL_IV_FOR">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY_TOTALS CL_VAL_LOC">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY_TOTALS CL_VAL_FOR">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY_TOTALS DOP_VL_LOC">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY_TOTALS IVVAL_LOC">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY_TOTALS IVVAL_FOR">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POHISTORY_TOTALS DL_QTY_TRSP">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY_TOTALS BL_QTY_TOTAL">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY_TOTALS DL_QTY_TOTAL">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY_TOTALS IV_QTY_TOTAL">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POHISTORY_TOTALS CURRENCY">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POHISTORY_TOTALS CURRENCY_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM PO_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POITEM DELETE_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM SHORT_TEXT">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POITEM MATERIAL">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="POITEM MATERIAL_EXTERNAL">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POITEM MATERIAL_GUID">
+        <datatype type="STRING" maxLength="32"/>
+      </element>
+      <element name="POITEM MATERIAL_VERSION">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM EMATERIAL">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="POITEM EMATERIAL_EXTERNAL">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POITEM EMATERIAL_GUID">
+        <datatype type="STRING" maxLength="32"/>
+      </element>
+      <element name="POITEM EMATERIAL_VERSION">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM PLANT">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POITEM STGE_LOC">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POITEM TRACKINGNO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM MATL_GROUP">
+        <datatype type="STRING" maxLength="9"/>
+      </element>
+      <element name="POITEM INFO_REC">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM VEND_MAT">
+        <datatype type="STRING" maxLength="35"/>
+      </element>
+      <element name="POITEM QUANTITY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POITEM PO_UNIT">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM PO_UNIT_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM ORDERPR_UN">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM ORDERPR_UN_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM CONV_NUM1">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="0"/>
+      </element>
+      <element name="POITEM CONV_DEN1">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="0"/>
+      </element>
+      <element name="POITEM NET_PRICE">
+        <datatype type="DECIMAL" maxDigits="29" maxFractionalDigits="9"/>
+      </element>
+      <element name="POITEM PRICE_UNIT">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="0"/>
+      </element>
+      <element name="POITEM GR_PR_TIME">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="0"/>
+      </element>
+      <element name="POITEM TAX_CODE">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POITEM BON_GRP1">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POITEM QUAL_INSP">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM INFO_UPD">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM PRNT_PRICE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM EST_PRICE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM REMINDER1">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="0"/>
+      </element>
+      <element name="POITEM REMINDER2">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="0"/>
+      </element>
+      <element name="POITEM REMINDER3">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="0"/>
+      </element>
+      <element name="POITEM OVER_DLV_TOL">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="1"/>
+      </element>
+      <element name="POITEM UNLIMITED_DLV">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM UNDER_DLV_TOL">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="1"/>
+      </element>
+      <element name="POITEM VAL_TYPE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM NO_MORE_GR">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM FINAL_INV">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM ITEM_CAT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM ACCTASSCAT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM DISTRIB">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM PART_INV">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM GR_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM GR_NON_VAL">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM IR_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM FREE_ITEM">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM GR_BASEDIV">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM ACKN_REQD">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM ACKNOWL_NO">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="POITEM AGREEMENT">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM AGMT_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POITEM SHIPPING">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POITEM CUSTOMER">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM COND_GROUP">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POITEM NO_DISCT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM PLAN_DEL">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="0"/>
+      </element>
+      <element name="POITEM NET_WEIGHT">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POITEM WEIGHTUNIT">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM WEIGHTUNIT_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM TAXJURCODE">
+        <datatype type="STRING" maxLength="15"/>
+      </element>
+      <element name="POITEM CTRL_KEY">
+        <datatype type="STRING" maxLength="8"/>
+      </element>
+      <element name="POITEM CONF_CTRL">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POITEM REV_LEV">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POITEM FUND">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM FUNDS_CTR">
+        <datatype type="STRING" maxLength="16"/>
+      </element>
+      <element name="POITEM CMMT_ITEM">
+        <datatype type="STRING" maxLength="14"/>
+      </element>
+      <element name="POITEM PRICEDATE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM PRICE_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POITEM GROSS_WT">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POITEM VOLUME">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POITEM VOLUMEUNIT">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM VOLUMEUNIT_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM INCOTERMS1">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM INCOTERMS2">
+        <datatype type="STRING" maxLength="28"/>
+      </element>
+      <element name="POITEM PRE_VENDOR">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM VEND_PART">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POITEM HL_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POITEM GR_TO_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POITEM SUPP_VENDOR">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM SC_VENDOR">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM KANBAN_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM ERS">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM R_PROMO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM POINTS">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POITEM POINT_UNIT">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM POINT_UNIT_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM SEASON">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POITEM SEASON_YR">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POITEM BON_GRP2">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POITEM BON_GRP3">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POITEM SETT_ITEM">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM MINREMLIFE">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="0"/>
+      </element>
+      <element name="POITEM RFQ_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM RFQ_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POITEM PREQ_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM PREQ_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POITEM REF_DOC">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM REF_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POITEM SI_CAT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM RET_ITEM">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM AT_RELEV">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM ORDER_REASON">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM BRAS_NBM">
+        <datatype type="STRING" maxLength="16"/>
+      </element>
+      <element name="POITEM MATL_USAGE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM MAT_ORIGIN">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM IN_HOUSE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM INDUS3">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POITEM INF_INDEX">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POITEM UNTIL_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POITEM DELIV_COMPL">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM PART_DELIV">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM SHIP_BLOCKED">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM PREQ_NAME">
+        <datatype type="STRING" maxLength="12"/>
+      </element>
+      <element name="POITEM PERIOD_IND_EXPIRATION_DATE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM INT_OBJ_NO">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="POITEM PCKG_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM BATCH">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM VENDRBATCH">
+        <datatype type="STRING" maxLength="15"/>
+      </element>
+      <element name="POITEM CALCTYPE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM GRANT_NBR">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="POITEM CMMT_ITEM_LONG">
+        <datatype type="STRING" maxLength="24"/>
+      </element>
+      <element name="POITEM FUNC_AREA_LONG">
+        <datatype type="STRING" maxLength="16"/>
+      </element>
+      <element name="POITEM NO_ROUNDING">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM PO_PRICE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM SUPPL_STLOC">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POITEM SRV_BASED_IV">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM FUNDS_RES">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM RES_ITEM">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM ORIG_ACCEPT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM ALLOC_TBL">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM ALLOC_TBL_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POITEM SRC_STOCK_TYPE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POITEM REASON_REJ">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POITEM CRM_SALES_ORDER_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POITEM CRM_SALES_ORDER_ITEM_NO">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POITEM CRM_REF_SALES_ORDER_NO">
+        <datatype type="STRING" maxLength="35"/>
+      </element>
+      <element name="POITEM CRM_REF_SO_ITEM_NO">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POITEM PRIO_URGENCY">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POITEM PRIO_REQUIREMENT">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POITEM REASON_CODE">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POITEM FUND_LONG">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="POITEM LONG_ITEM_NUMBER">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POITEM EXTERNAL_SORT_NUMBER">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POITEM EXTERNAL_HIERARCHY_TYPE">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POLIMITS PCKG_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POLIMITS LIMIT">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POLIMITS NO_LIMIT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POLIMITS EXP_VALUE">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POLIMITS SSC_EXIST">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POLIMITS CON_EXIST">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POLIMITS TMP_EXIST">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POLIMITS PRICE_CHG">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POLIMITS FREE_LIMIT">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POLIMITS NO_FRLIMIT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POLIMITS SERV_TYPE">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POLIMITS EDITION">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POLIMITS SSC_LIMIT">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POLIMITS SSC_NOLIM">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POLIMITS SSC_PRSCHG">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POLIMITS SSC_PERC">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="1"/>
+      </element>
+      <element name="POLIMITS TMP_NUMBER">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POLIMITS TMP_LIMIT">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POLIMITS TMP_NOLIM">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POLIMITS TMP_PRSCHG">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POLIMITS TMP_PERC">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="1"/>
+      </element>
+      <element name="POLIMITS CONT_PERC">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="1"/>
+      </element>
+      <element name="POPARTNER PARTNERDESC">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POPARTNER LANGU">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POPARTNER BUSPARTNO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POPARTNER DELETE_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSCHEDULE PO_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POSCHEDULE SCHED_LINE">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POSCHEDULE DEL_DATCAT_EXT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSCHEDULE DELIVERY_DATE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSCHEDULE QUANTITY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POSCHEDULE DELIV_TIME">
+        <datatype type="TIME"/>
+      </element>
+      <element name="POSCHEDULE STAT_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POSCHEDULE PREQ_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSCHEDULE PREQ_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POSCHEDULE PO_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POSCHEDULE ROUTESCHED">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSCHEDULE MS_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POSCHEDULE MS_TIME">
+        <datatype type="TIME"/>
+      </element>
+      <element name="POSCHEDULE LOAD_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POSCHEDULE LOAD_TIME">
+        <datatype type="TIME"/>
+      </element>
+      <element name="POSCHEDULE TP_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POSCHEDULE TP_TIME">
+        <datatype type="TIME"/>
+      </element>
+      <element name="POSCHEDULE GI_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POSCHEDULE GI_TIME">
+        <datatype type="TIME"/>
+      </element>
+      <element name="POSCHEDULE DELETE_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSCHEDULE REQ_CLOSED">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSCHEDULE GR_END_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POSCHEDULE GR_END_TIME">
+        <datatype type="TIME"/>
+      </element>
+      <element name="POSCHEDULE COM_QTY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POSCHEDULE COM_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POSERVICES PCKG_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES LINE_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES EXT_LINE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES OUTL_LEVEL">
+        <datatype type="INTEGER"/>
+      </element>
+      <element name="POSERVICES OUTL_NO">
+        <datatype type="STRING" maxLength="8"/>
+      </element>
+      <element name="POSERVICES OUTL_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES SUBPCKG_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES SERVICE">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="POSERVICES SERV_TYPE">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POSERVICES EDITION">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POSERVICES SSC_ITEM">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="POSERVICES EXT_SERV">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="POSERVICES QUANTITY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POSERVICES BASE_UOM">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POSERVICES UOM_ISO">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="POSERVICES OVF_TOL">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="1"/>
+      </element>
+      <element name="POSERVICES OVF_UNLIM">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES PRICE_UNIT">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="0"/>
+      </element>
+      <element name="POSERVICES GR_PRICE">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POSERVICES FROM_LINE">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POSERVICES TO_LINE">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POSERVICES SHORT_TEXT">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POSERVICES DISTRIB">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES PERS_NO">
+        <datatype type="STRING" maxLength="8"/>
+      </element>
+      <element name="POSERVICES WAGETYPE">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POSERVICES PLN_PCKG">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES PLN_LINE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES CON_PCKG">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES CON_LINE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES TMP_PCKG">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES TMP_LINE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES SSC_LIM">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES LIMIT_LINE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES TARGET_VAL">
+        <datatype type="DECIMAL" maxDigits="23" maxFractionalDigits="4"/>
+      </element>
+      <element name="POSERVICES BASLINE_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES BASIC_LINE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES ALTERNAT">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES BIDDER">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES SUPP_LINE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES OPEN_QTY">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES INFORM">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES BLANKET">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES EVENTUAL">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES TAX_CODE">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POSERVICES TAXJURCODE">
+        <datatype type="STRING" maxLength="15"/>
+      </element>
+      <element name="POSERVICES PRICE_CHG">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES MATL_GROUP">
+        <datatype type="STRING" maxLength="9"/>
+      </element>
+      <element name="POSERVICES DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POSERVICES BEGINTIME">
+        <datatype type="TIME"/>
+      </element>
+      <element name="POSERVICES ENDTIME">
+        <datatype type="TIME"/>
+      </element>
+      <element name="POSERVICES EXTPERS_NO">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POSERVICES FORMULA">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES FORM_VAL1">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POSERVICES FORM_VAL2">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POSERVICES FORM_VAL3">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POSERVICES FORM_VAL4">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POSERVICES FORM_VAL5">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POSERVICES USERF1_NUM">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES USERF2_NUM">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POSERVICES USERF1_TXT">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POSERVICES USERF2_TXT">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES HI_LINE_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSERVICES EXTREFKEY">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="POSERVICES DELETE_IND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSERVICES PER_SDATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POSERVICES PER_EDATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POSHIPPINGEXP PO_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POSHIPPINGEXP SHIP_POINT">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POSHIPPINGEXP DLV_PRIO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POSHIPPINGEXP ROUTE">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POSHIPPINGEXP CUSTOMER">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSHIPPINGEXP SOLD_TO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSHIPPINGEXP FWDAGENT">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSHIPPINGEXP SALESORG">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POSHIPPINGEXP DISTR_CHAN">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POSHIPPINGEXP DIVISION">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POSHIPPINGEXP DEL_CREATE_DATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="POSHIPPINGEXP PLND_DELRY">
+        <datatype type="DECIMAL" maxDigits="3" maxFractionalDigits="0"/>
+      </element>
+      <element name="POSHIPPINGEXP LANGU">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSHIPPINGEXP LANGU_ISO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POSHIPPINGEXP SHIP_COND">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POSHIPPINGEXP LOADINGGRP">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POSHIPPINGEXP TRANS_GRP">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POSHIPPINGEXP UNLOAD_PT">
+        <datatype type="STRING" maxLength="25"/>
+      </element>
+      <element name="POSHIPPINGEXP ORDCOMBIND">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="POSHIPPINGEXP TIME_ZONE">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="POSHIPPINGEXP AUTH_NUMBER">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="POSHIPPINGEXP SRC_DLV_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSHIPPINGEXP SRC_HANDLG_UNIT">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="POSHIPPINGEXP INSPOUT_GUID">
+        <datatype type="STRING" maxLength="32"/>
+      </element>
+      <element name="POSHIPPINGEXP FOLLOW_UP">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POSRVACCESSVALUES PCKG_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSRVACCESSVALUES LINE_NO">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POSRVACCESSVALUES SERNO_LINE">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POSRVACCESSVALUES PERCENTAGE">
+        <datatype type="DECIMAL" maxDigits="5" maxFractionalDigits="1"/>
+      </element>
+      <element name="POSRVACCESSVALUES SERIAL_NO">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POSRVACCESSVALUES QUANTITY">
+        <datatype type="DECIMAL" maxDigits="13" maxFractionalDigits="3"/>
+      </element>
+      <element name="POSRVACCESSVALUES NET_VALUE">
+        <datatype type="DECIMAL" maxDigits="11" maxFractionalDigits="2"/>
+      </element>
+      <element name="POTEXTHEADER PO_NUMBER">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POTEXTHEADER PO_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POTEXTHEADER TEXT_ID">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POTEXTHEADER TEXT_FORM">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POTEXTHEADER TEXT_LINE">
+        <datatype type="STRING" maxLength="132"/>
+      </element>
+      <element name="POTEXTITEM PO_NUMBER">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="POTEXTITEM PO_ITEM">
+        <datatype type="STRING" maxLength="5"/>
+      </element>
+      <element name="POTEXTITEM TEXT_ID">
+        <datatype type="STRING" maxLength="4"/>
+      </element>
+      <element name="POTEXTITEM TEXT_FORM">
+        <datatype type="STRING" maxLength="2"/>
+      </element>
+      <element name="POTEXTITEM TEXT_LINE">
+        <datatype type="STRING" maxLength="132"/>
+      </element>
+      <element name="RETURN TYPE">
+        <datatype type="STRING" maxLength="1"/>
+      </element>
+      <element name="RETURN ID">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="RETURN NUMBER">
+        <datatype type="STRING" maxLength="3"/>
+      </element>
+      <element name="RETURN MESSAGE">
+        <datatype type="STRING" maxLength="220"/>
+      </element>
+      <element name="RETURN LOG_NO">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="RETURN LOG_MSG_NO">
+        <datatype type="STRING" maxLength="6"/>
+      </element>
+      <element name="RETURN MESSAGE_V1">
+        <datatype type="STRING" maxLength="50"/>
+      </element>
+      <element name="RETURN MESSAGE_V2">
+        <datatype type="STRING" maxLength="50"/>
+      </element>
+      <element name="RETURN MESSAGE_V3">
+        <datatype type="STRING" maxLength="50"/>
+      </element>
+      <element name="RETURN MESSAGE_V4">
+        <datatype type="STRING" maxLength="50"/>
+      </element>
+      <element name="RETURN PARAMETER">
+        <datatype type="STRING" maxLength="32"/>
+      </element>
+      <element name="RETURN ROW">
+        <datatype type="INTEGER"/>
+      </element>
+      <element name="RETURN FIELD">
+        <datatype type="STRING" maxLength="30"/>
+      </element>
+      <element name="RETURN SYSTEM">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="orderid">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="customerid">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="employeeid">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="orderdate">
+        <datatype type="DATE"/>
+      </element>
+      <element name="purchaseordernumber">
+        <datatype type="STRING" maxLength="30"/>
+      </element>
+      <element name="shipname">
+        <datatype type="STRING" maxLength="50"/>
+      </element>
+      <element name="shipaddress">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="shipcity">
+        <datatype type="STRING" maxLength="50"/>
+      </element>
+      <element name="shipstateorprovince">
+        <datatype type="STRING" maxLength="50"/>
+      </element>
+      <element name="shippostalcode">
+        <datatype type="STRING" maxLength="20"/>
+      </element>
+      <element name="shipcountry">
+        <datatype type="STRING" maxLength="50"/>
+      </element>
+      <element name="shipphonenumber">
+        <datatype type="STRING" maxLength="30"/>
+      </element>
+      <element name="shipdate">
+        <datatype type="DATE"/>
+      </element>
+      <element name="shippingmethodid">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="freightcharge">
+        <datatype type="DECIMAL" maxDigits="12" minFractionalDigits="2" maxFractionalDigits="2"/>
+      </element>
+      <element name="1">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="creationDate" type="LONG">1553790785808</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="impactLevel" type="INTEGER">8</attribute>
+  <attribute name="impactMessage" type="STRING">The link target &apos;/shared/AirFrance/Application_layer/Order_EMEA&apos; does not exist.</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1555684143267</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1553790785808</attribute>
+  <attribute name="targetPath" type="STRING">/shared/AirFrance/Application_layer/Order_EMEA</attribute>
+  <attribute name="targetType" type="SHORT">2</attribute>
+</metadata>
