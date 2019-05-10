@@ -1,0 +1,160 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:38f4c72c-f015-450d-a8c3-8e8a51f25c5f -->
+<metadata name="v_Batch" path="/shared/Demo/Setup/v_Batch" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
+  <columns>
+    <column name="Part_Ref_value" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Part_Site_Value" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Type_Value" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Qautity" nullable="true">
+      <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Date" nullable="true">
+      <datatype type="DATE"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Location_ID" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Location_Warehouse_ID" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="ExpirY_Date" nullable="true">
+      <datatype type="DATE"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_Inventory_Status" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_Lot_Number" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Part_Name" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_GMIDPart" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_GMIDSC_Desc" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/Demo/L0_Physical/DataSources/ds_backOffice/Germany/BatchP08_20180404_231503.xls" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="Part.ReferencePart.Value">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Part.Site.Value">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Type.Value">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Quantity">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Date">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Location.Id">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Location.Warehouse.Id">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="ExpiryDate">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="U_Inventory_Status">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="U_Lot_Number">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Part.Name">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="U_GMIDPart">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="U_GMIDSCDesc">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="SQL" type="STRING">SELECT 
+    CAST(BatchP08_20180404_231503_xls.&quot;Part.ReferencePart.Value&quot; AS VARCHAR) Part_Ref_value, 
+    CAST(BatchP08_20180404_231503_xls.&quot;Part.Site.Value&quot; AS VARCHAR) Part_Site_Value, 
+    CAST(BatchP08_20180404_231503_xls.&quot;Type.Value&quot; AS VARCHAR) Type_Value,
+    CAST(REPLACE(BatchP08_20180404_231503_xls.Quantity, &apos;,&apos;, &apos;&apos;) AS INTEGER) Qautity,
+    PARSE_DATE(BatchP08_20180404_231503_xls.&quot;Date&quot;, &apos;dd/mm/yyyy&apos;) AS &quot;Date&quot;,
+    CAST(BatchP08_20180404_231503_xls.&quot;Location.Id&quot; AS VARCHAR) Location_ID, 
+    CAST(BatchP08_20180404_231503_xls.&quot;Location.Warehouse.Id&quot; AS VARCHAR) Location_Warehouse_ID, 
+    PARSE_DATE(BatchP08_20180404_231503_xls.ExpiryDate, &apos;dd/mm/yyyy&apos;) ExpirY_Date, 
+    CAST(BatchP08_20180404_231503_xls.U_Inventory_Status AS VARCHAR) U_Inventory_Status, 
+    CAST(BatchP08_20180404_231503_xls.U_Lot_Number AS VARCHAR) U_Lot_Number, 
+    CAST(BatchP08_20180404_231503_xls.&quot;Part.Name&quot; AS VARCHAR) Part_Name, 
+    CAST(BatchP08_20180404_231503_xls.U_GMIDPart AS VARCHAR) U_GMIDPart, 
+    CAST(BatchP08_20180404_231503_xls.U_GMIDSCDesc AS VARCHAR) U_GMIDSC_Desc
+FROM      
+    /shared/Demo/L0_Physical/DataSources/ds_backOffice/Germany/&quot;BatchP08_20180404_231503.xls&quot; BatchP08_20180404_231503_xls</attribute>
+  <attribute name="cacheLastTracking" type="STRING">/shared/Sanofi/ds_persist/cache_tracking</attribute>
+  <attribute name="creationDate" type="LONG">1527796533564</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1541426983130</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1527796533564</attribute>
+</metadata>

@@ -1,0 +1,106 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:38f4c72c-f015-450d-a8c3-8e8a51f25c5f -->
+<metadata name="BatchP08_20180404_231503.xls" path="/shared/Demo/L0_Physical/DataSources/ds_backOffice/Germany/BatchP08_20180404_231503.xls" type="TABLE" subtype="DELIMITED_FILE" changeToken="0" tableType="NONE">
+  <columns>
+    <column name="Part.ReferencePart.Value" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Part.Site.Value" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Type.Value" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Quantity" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Date" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Location.Id" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Location.Warehouse.Id" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="ExpiryDate" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_Inventory_Status" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_Lot_Number" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Part.Name" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_GMIDPart" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_GMIDSCDesc" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="32768"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="charset" type="STRING">iso-8859-1</attribute>
+  <attribute name="creationDate" type="LONG">1527779166471</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="delimiter" type="STRING">&lt;tab&gt;</attribute>
+  <attribute name="eol" type="STRING">
+</attribute>
+  <attribute name="hasHeaders" type="BOOLEAN">true</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1541426983130</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="path" type="STRING">\Germany\BatchP08_20180404_231503.xls</attribute>
+  <attribute name="qualifier" type="STRING">&quot;</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1527779166471</attribute>
+  <attribute name="startRow" type="INTEGER">1</attribute>
+</metadata>

@@ -1,0 +1,296 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:38f4c72c-f015-450d-a8c3-8e8a51f25c5f -->
+<metadata name="Score" path="/shared/Demo/L1_Logical/Score" type="MODEL" subtype="NONE" changeToken="0">
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/Demo/L0_Physical/DataSources/ds_persist/batch" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="Region">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="FileDate">
+        <datatype type="DATE"/>
+      </element>
+      <element name="FileTime">
+        <datatype type="TIME"/>
+      </element>
+      <element name="Part_Ref_value">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_Site_Value">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Type_Value">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Quantity">
+        <datatype type="FLOAT" minValue="-3.402823466E38" maxValue="3.402823466E38"/>
+      </element>
+      <element name="Date_">
+        <datatype type="DATE"/>
+      </element>
+      <element name="Location_ID">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Location_Warehouse_ID">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="ExpirY_Date">
+        <datatype type="DATE"/>
+      </element>
+      <element name="U_Inventory_Status">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_Lot_Number">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_Name">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_GMIDPart">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_GMIDSC_Desc">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/shared/Demo/L0_Physical/DataSources/ds_persist/deliveries" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="Region">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="FileDate">
+        <datatype type="DATE"/>
+      </element>
+      <element name="FileTime">
+        <datatype type="TIME"/>
+      </element>
+      <element name="Order_ID">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Order_site">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_Site">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Order_type">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Line">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_refPart_valeu">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Quantity">
+        <datatype type="FLOAT" minValue="-3.402823466E38" maxValue="3.402823466E38"/>
+      </element>
+      <element name="DueDate">
+        <datatype type="DATE"/>
+      </element>
+      <element name="U_SAPType">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="UnitSellingPrice">
+        <datatype type="FLOAT" minValue="-3.402823466E38" maxValue="3.402823466E38"/>
+      </element>
+      <element name="U_SO_Currency">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_Lot_Number">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="status">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_Name">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_GMIDPart">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_GMIDSCDesc">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Order_customer_id">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Order_Customer_Name">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_CountryCode">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/shared/Demo/L0_Physical/DataSources/ds_persist/salesorder" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="Region">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="FileDate">
+        <datatype type="DATE"/>
+      </element>
+      <element name="FileTime">
+        <datatype type="TIME"/>
+      </element>
+      <element name="Order_id">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Order_site">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_Site">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Order_Type">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Line">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_RefPart_Value">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Qautity">
+        <datatype type="FLOAT" minValue="-3.402823466E38" maxValue="3.402823466E38"/>
+      </element>
+      <element name="DueDate">
+        <datatype type="DATE"/>
+      </element>
+      <element name="U_SAPType">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="UnitSellingPrice">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_so_currency">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Status">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_Name">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_GMIDPart">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_GMIDSCDesc">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Order_Customer_ID">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Order_Customer_Name">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_CountryCode">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="creationDate" type="LONG">1527863447988</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="crossModelBlob" type="BYTE_ARRAY">rO0ABXcBAx+LCAAAAAAAAAC1Vl1sFFUUPjPdLd1uC+WvBUFSFfwhcTZRNCQo7u4sC4UGTNuQEMA6
+3b3dHZjuDDN3d7YmalEjD5IQiERINFYD+iAxRh40miiQmJQEn3yzxhhjCA824cVIfNFz7uzszk5b
+2kC8yd1779xzvvudc885dy/NQNSNyZIEAEviMoftOXNMwW6Zjs6Z4yplXRkz88xgtlLRmavYzNC4
+bpacom4pQ9qIwfbi9gDTDP0VZrs7pAhCSXI8OXAFqCW3HhCTZB9466cuT0CgfX+7NknvAkidfV/M
+OSypDKc1niu6ESkvSY4NnUe0iqZoLleyZon/8NEzN2/8ut9pgdY+WDuKXwaZrQsO+YzGtf3MdpBk
+FmKWqeMmfu+DiCOGqMPHDdYPq0YH2LEyczjLpzi39ZEyGsxhdT+dlChz3Ujs0pwiJxu39UOkpI0x
+Diu8bUMrFRKDqFUqbKtaZHIqKah30Bz5rhR8CUWpo6z8dtmmh3b/8XULyFloN0wtn9Vy3LT7IMaL
+NnOKppGvWi94QG1uG/7Gsbdw2OiUSwqZqWg+1YpmIHklz0b1EssPH2XjeOpycSqRU/pKnBWYveL3
+yQt/Hz+xVQYJTRdKVRu6GnJ7y2MjzH770tkH4+/+9o4MgOYk4XUEW1d3uTh5iFV53VFHqx+c7LzV
+mSV5GxJCkqOAUpfIq0XNRvOY3YddQzM31veOb+CP/riz5xCSqjn2GLwGkarFodVleqHI8fhlDY5Z
+9BX/eeb6x9PP3f4TlbK+JaTWTv5yaNaB6qPamG6M4ySD4WAWhMSqKsItrVujmoZpSxd73uw69XRZ
+hmiWtAyrqPkO6gc5h5GwzrtqVEnkSCUhFActLce2HYTYqF0YEeIc5IPZgwgiVnRgjwgJ+Beb5TW3
+JSJHLDcGyS4v3AXh1ULqw8+6UCLwYWJiQuisUSknMEFSkwDqpyJvJMrVgOzlT06T6CrvNLi1/Vk/
+s+IySUEwJV9uTsndEwuk5FAwJdsqww7XeNnxcpLAo/SzZk77aGct/TwQsCOTQNA3oG4H7a8LcH/s
+Ltx7m7nvWYj7oRD3AWaZNr937upfCPrdvNyfv/7/+J2w1t87a4qcK5Pzs/6iwZrDw+NejS/qmLB2
+rjiu7LTNstVU4LMR3yxf0zcjqTevw2ZJalOFb887wxaVaYcuZRSLPHGTIVxK6Wvr7JpIn9vEZozK
+FU2WimVXsuaLFV7q1wpAI2Owh5PSbw2pV8H6BiVovanmTvFAoSvVctidy5MHaqYP1YAsV8KOq6RS
+25lnXKjhGZJ3VY9EvWsKB9e+Kx6gH1wDybveAqTPBG+hozKcYYZewdeT3Udiq6exJ8J+aST2Tp/G
+bP57Qvz3L8T/yyD/zsrwoGYwZ5+dx1i6DwNOIvI/YQN66wa8FKAi4g97JC7hI1HLmRdNY7wfX+Id
++UIjWTZIrSSbyU1ACrFoVCfxMIxyGme9AW6UzkbUeB0VS1ZMSk81qG92eyUCS035ESLBuVM/bfHZ
+ISsSe9xtFYcLnSdqwJ5+jP7twVWrgUfrIN5X6nmBJwfxugWenFmJRmBxVVGCxvnwUwH8NM6vBvCf
+PHNjizcP4C8V+FIGb0Q9sUjcqcatEO7h6SOzeddw1W684V/mxr0W9u/tMN+b5+bjq2KZSk8uEney
+Gffw9FuzcX0/U8np9YKFxsXcI8VFCP8OzVvn4k3YHYvjnQ7hXvx8WuBG58LdjLjbF4m7qxl3/XsX
+hD9a5vCHuPteT3a++AjjXwvFx7lTM7PxF8iTRrx1e/5uyruZO/Af18Y9eEQNACE=</attribute>
+  <attribute name="crossModelProperties" type="STRING_ARRAY">
+    <item>modeler.view.relationship.action.toggleNavigator</item>
+    <item>true</item>
+    <item>modeler.view.relationship.currentLayoutStyle</item>
+    <item>ORTHOGONAL</item>
+  </attribute>
+  <attribute name="descendentResourceRefs" type="SET"></attribute>
+  <attribute name="lastModifiedDate" type="LONG">1541426983130</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="memberResourceRefs" type="SET">
+    <item type="OBJECT">rO0ABXNyACpjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuUGF0aFR5cGUAABnTDJQk
+yQIAAlMABHR5cGVMAARwYXRodAAoTGNvbS9jb21wb3NpdGVzdy9jb21tb24vcmVwb3NpdG9yeS9Q
+YXRoO3hwAAJzcgAmY29tLmNvbXBvc2l0ZXN3LmNvbW1vbi5yZXBvc2l0b3J5LlBhdGhACAIJ5hQ4
+OAIAAloACGFic29sdXRlTAAFcGFydHN0ABBMamF2YS91dGlsL0xpc3Q7eHABc3IAE2phdmEudXRp
+bC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAZ3BAAAAAZ0AAZzaGFyZWR0AAREZW1v
+dAALTDBfUGh5c2ljYWx0AAtEYXRhU291cmNlc3QACmRzX3BlcnNpc3R0AAViYXRjaHg=</item>
+  </attribute>
+  <attribute name="modelBlob" type="BYTE_ARRAY">rO0ABXcBAx+LCAAAAAAAAAC1Vl1sFFUUvjPdLd3+0FoKBapYtYAvTBMVo6nAtluWFivW/vBSsEx3
+b3cHpjvDzN2dLQ+6RKIYTRobijXRiAR8EKImPGjkwbbEpCTwom/WGEMMwcQmvNn4oufc2dmd3Xa7
+ba2TzMydved85zvfPefevT5PvJZPJHj5KkRG9oe0EQluXTMVRk1LiivSiBamKjWkhEItyaCqzBQt
+ZkYVXeqTh1R6BKZ7qKwqZ6hhHRQ8ACWIFf6+FEf1773BB/42Yn8/Y3871/cP04O2GkJaJz7mY0a8
+QzILRS2PEBYE0yBVJ+WELMkWk4JajP3w2d77d349apaQ0k6ybRh+6aWGwhmE22UmH6WGCRSDxKdr
+CkzC753EY/KX12SjKu0idcM99HScmoyGWxkzlKE4pMvI5i6M1BxnitrcIZtRhhm2dBFPTB6hjNTa
+06ocizT3glcs0pLUMeFWPydeiWPgu4nzRRQpg7LpZvXOJw7//m0JEYOkXNXkcFAOMc3oJD4WNagZ
+1dRwUj9gA5VZZfCsgLuEkSYzHpMwTUl2qCZkFchLYTqsxGh48BQdhaiP8KhITuqMMRqhRu29S1f+
+OvvOCyIRIHXulDRITdbuSHxkiBpvX594rOLCb+9BIUA6fvImgDVkJOeR+2iSZYQ6lfzk/aoHVUG0
+N0gzt2RgIGUswoGobEB61OiEW4Y0mzJzZ3ewXXcP1R8DUmlhT5M3iCepM1JqUSUSZRC+OssxCFqx
+n+dvX5576eGf4BR0MkG3ctTLxFEluA/LI4o6CoN2KActwi3qkgC3MZNNQFM1Q7ha/1bN2LNxkXiD
+6KXqUdkRqIuIIaiEBnupwaU5hC7N3LFXl0O0ZYD4ho3IEDdnRBwIDgAI/8KA9bwkyD9w6fZllXhE
+j275iL/GLnZOeDO3Ivp3YOH6IZVKcZ+tgQ7oCGiPwBnojl+4nyAIOc43Pv8ATTeSB08953RUhYjz
+xNWKr13KbcVXUkVaUXW3Yjl0v5KABoPtgPcjwnvxsXXJ3HBmGz62u3P4G+4XszngfAPy3jdZmHf3
+VC7v7mK8z+XwNmWVmpoRhm1pzbw5bOVSvBcK8iYrvDK8/Sn7tnlXJQZ7kfmryHxlkrsq4tNrNWCR
+n8atJwmZubdEGvtfLyx/z4lc+Q8Xk7/PLX9ZYtBkMouvvGgez2fddr4A631f/1/iVyYG21df7ouY
+ByYK6X1oGb0bc/V+uZjex/L07qG6ZrC1s273FNL79jKsp3JZd5IirDvcrDckBtuyJ/1aSGNp39qz
+lNTPL0P6RC7p1ZQ2YjX+t6JezHc78N3tilwLt4dzF+AoGrX/e3Vr6mgXnPcHw5HsP65SoRTtFm0B
+lhfRwbsi4w214RPQpFW34+6ydvDvad2OKhBhcuwnPEk22LHRqMkJgR8707C292K0tllCpu42/phG
++ybwEaKVrhANvZ05RJuZzSoCaHvG7yBa2Sq4Tedxc6EdnzvpnJmig7aFo4mBr9LLnvZwibsw3oTi
+ClC7BJ448bRVskzUPH1hncfSiggrzMGtiLs6uSL3nfNTyM9BBv546sIbaw8nd2cYL8V8Znn1gfm7
++bE28lhCe/UUj1U8Rv4KT8/mq3M+vcLroM7xuXOTaTRxXdDwzC9ZH7SrX84hmnd9Mn30wytOHYh5
+axO4nOJ7bvG1cdaiQL/A2lwosP7YL4EDX1wrHgO93fsF1ti0t78/GwNOTr7zrYMqk2PzhVTB3Nr+
+6O9fWVcgQ3eM1pyKvZivitOBN0F5mGzfQvi7eKzW2WJ7x3handVXYN0S6iz8C/yKfPsAEAAh</attribute>
+  <attribute name="modelProperties" type="STRING_ARRAY">
+    <item>modeler.view.relationship.action.showViewResources</item>
+    <item>false</item>
+    <item>modeler.view.relationship.action.toggleNavigator</item>
+    <item>true</item>
+    <item>modeler.view.relationship.currentLayoutStyle</item>
+    <item>ORTHOGONAL</item>
+  </attribute>
+  <attribute name="relatedResourceRefs" type="SET">
+    <item type="OBJECT">rO0ABXNyACpjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuUGF0aFR5cGUAABnTDJQk
+yQIAAlMABHR5cGVMAARwYXRodAAoTGNvbS9jb21wb3NpdGVzdy9jb21tb24vcmVwb3NpdG9yeS9Q
+YXRoO3hwAAJzcgAmY29tLmNvbXBvc2l0ZXN3LmNvbW1vbi5yZXBvc2l0b3J5LlBhdGhACAIJ5hQ4
+OAIAAloACGFic29sdXRlTAAFcGFydHN0ABBMamF2YS91dGlsL0xpc3Q7eHABc3IAE2phdmEudXRp
+bC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAZ3BAAAAAZ0AAZzaGFyZWR0AAREZW1v
+dAALTDBfUGh5c2ljYWx0AAtEYXRhU291cmNlc3QACmRzX3BlcnNpc3R0AApkZWxpdmVyaWVzeA==</item>
+    <item type="OBJECT">rO0ABXNyACpjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuUGF0aFR5cGUAABnTDJQk
+yQIAAlMABHR5cGVMAARwYXRodAAoTGNvbS9jb21wb3NpdGVzdy9jb21tb24vcmVwb3NpdG9yeS9Q
+YXRoO3hwAAJzcgAmY29tLmNvbXBvc2l0ZXN3LmNvbW1vbi5yZXBvc2l0b3J5LlBhdGhACAIJ5hQ4
+OAIAAloACGFic29sdXRlTAAFcGFydHN0ABBMamF2YS91dGlsL0xpc3Q7eHABc3IAE2phdmEudXRp
+bC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAZ3BAAAAAZ0AAZzaGFyZWR0AAREZW1v
+dAALTDBfUGh5c2ljYWx0AAtEYXRhU291cmNlc3QACmRzX3BlcnNpc3R0AApzYWxlc29yZGVyeA==</item>
+  </attribute>
+  <attribute name="relationshipCriteria" type="OBJECT">rO0ABXNyADZjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuUmVsYXRpb25zaGlwQ3Jp
+dGVyaWEAAAAV30W50QIAB0kACG1heENvdW50RAAIbWF4U2NvcmVEAAhtaW5TY29yZUkADHNjYW5J
+ZEZpbHRlclsADWNhcmRpbmFsaXRpZXN0AAJbSVsACHN0YXR1c2VzcQB+AAFbAAV0eXBlc3EAfgAB
+eHB/////f+////////8/6euFHrhR7P////91cgACW0lNumAmduqypQIAAHhwAAAABQAAAAQAAAAD
+AAAAAgAAAAEAAAAAdXEAfgADAAAABAAAAAEAAAACAAAAAAAAAANw</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1527863447988</attribute>
+  <attribute name="tableModelProperties" type="STRING_ARRAY"></attribute>
+</metadata>

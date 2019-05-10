@@ -1,0 +1,236 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:38f4c72c-f015-450d-a8c3-8e8a51f25c5f -->
+<metadata name="MyView" path="/shared/Demo/Setup/MyView" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
+  <columns>
+    <column name="Region" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Part_Site_Value" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/Demo/L1_Logical/v_Batch" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="Region">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="FileDate">
+        <datatype type="DATE"/>
+      </element>
+      <element name="FileTime">
+        <datatype type="TIME"/>
+      </element>
+      <element name="Part_Ref_value">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_Site_Value">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Type_Value">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Quantity">
+        <datatype type="FLOAT" minValue="2.2250738585072014E-308" maxValue="1.7976931348623157E308"/>
+      </element>
+      <element name="Date_">
+        <datatype type="DATE"/>
+      </element>
+      <element name="Location_ID">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Location_Warehouse_ID">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="ExpirY_Date">
+        <datatype type="DATE"/>
+      </element>
+      <element name="U_Inventory_Status">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_Lot_Number">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_Name">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_GMIDPart">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_GMIDSC_Desc">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/shared/Demo/L1_Logical/v_Deliveries" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="Region">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="FileDate">
+        <datatype type="DATE"/>
+      </element>
+      <element name="FileTime">
+        <datatype type="TIME"/>
+      </element>
+      <element name="Order_ID">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Order_site">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_Site">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Order_type">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Line">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_refPart_valeu">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Quantity">
+        <datatype type="FLOAT" minValue="2.2250738585072014E-308" maxValue="1.7976931348623157E308"/>
+      </element>
+      <element name="DueDate">
+        <datatype type="DATE"/>
+      </element>
+      <element name="U_SAPType">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="UnitSellingPrice">
+        <datatype type="FLOAT" minValue="2.2250738585072014E-308" maxValue="1.7976931348623157E308"/>
+      </element>
+      <element name="U_SO_Currency">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_Lot_Number">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="status">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Part_Name">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_GMIDPart">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_GMIDSCDesc">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Order_customer_id">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Order_Customer_Name">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="U_CountryCode">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="SQL" type="STRING">SELECT 
+    v_Batch.Region, 
+    v_Batch.Part_Site_Value
+FROM      
+    /shared/Demo/L1_Logical/v_Batch v_Batch INNER JOIN 
+        /shared/Demo/L1_Logical/v_Deliveries v_Deliveries
+    ON v_Batch.Region = v_Deliveries.Region AND 
+        v_Batch.FileDate = v_Deliveries.FileDate</attribute>
+  <attribute name="creationDate" type="LONG">1541427013592</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1557476340542</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="BYTE_ARRAY">EIEJBAAAAAMQUQYBAAcAdgBfAEIAYQB0AGMAaAYCAAcAdgBfAEIAYQB0AGMAaAML/////wMKAAPi
+BgMM/////wsRAAQABgBzAGgAYQByAGUAZAAEAEQAZQBtAG8ACgBMADEAXwBMAG8AZwBpAGMAYQBs
+AAcAdgBfAEIAYQB0AGMAaP//EFEGAQAMAHYAXwBEAGUAbABpAHYAZQByAGkAZQBzBgIADAB2AF8A
+RABlAGwAaQB2AGUAcgBpAGUAcwML/////wMKAAPjeAMM/////wsRAAQABgBzAGgAYQByAGUAZAAE
+AEQAZQBtAG8ACgBMADEAXwBMAG8AZwBpAGMAYQBsAAwAdgBfAEQAZQBsAGkAdgBlAHIAaQBlAHP/
+/xBTBgkABQBJAE4ATgBFAFIDDQAAAAADDgAAAAEIDxBhAQUAAQYACAEQYgYHAAEAPQEFAAgDEEEG
+AQAGAFIAZQBnAGkAbwBuBgIAAAYD//8GBP//Awr/////AwsAAAAA//8IBBBBBgEABgBSAGUAZwBp
+AG8AbgYCAAAGA///BgT//wMK/////wMLAAAAAf////8IAhBiBgcAAQA9AQUACAMQQQYBAAgARgBp
+AGwAZQBEAGEAdABlBgIAAAYD//8GBP//Awr/////AwsAAAAA//8IBBBBBgEACABGAGkAbABlAEQA
+YQB0AGUGAgAABgP//wYE//8DCv////8DCwAAAAH//////////wMFAAAAAQgCEDEGAf//AQIBAQYA
+AQMAAQQAAQUAAwcAAAAABwkAAAABAAAAAgkKAAAAAhBBBgEABgBSAGUAZwBpAG8AbgYCAAAGA///
+BgT//wMK/////wgMEBsDEgAAAAEEBAAAAAAAAAD/ARMB//8DCwAAAAD//xBBBgEADwBQAGEAcgB0
+AF8AUwBpAHQAZQBfAFYAYQBsAHUAZQYCAAAGA///BgT//wMK/////wgMEBsDEgAAAAEEBAAAAAAA
+AAD/ARMB//8DCwAAAAD/////CQYAAAADEIIDCgAAARgDCwAAAOgDDAAAAMgDDQAAARz//xCCAwoA
+AAJjAwsAAAE1AwwAAADIAw0AAADI//8QggMK/////wML/////wMM/////wMN////////CAMQcQMB
+AAAACwMCAAAAMgkDAAACJhB0AwYAAAAA//8QcgYE/////xBzAwUAAAAA//8QdQEHAf//EHgGC///
+//8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHQDBgAAAAH//xByBgT/////EHMD
+BQAAAAD//xB1AQcB//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8Q
+dP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Q
+dv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Q
+dv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8Q
+eQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcD
+Cv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgG
+C/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1
+AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP//
+//8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0
+//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2
+//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2
+//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5
+Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK
+////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL
+/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUB
+BwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE////
+/xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT/
+/xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb/
+/xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb/
+/xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkG
+DP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr/
+//////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/
+////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEH
+AP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////
+EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//
+EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//
+EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//
+EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM
+/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv//
+/////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC///
+//8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA
+//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Q
+c///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8Q
+cgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Q
+dv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Q
+dv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/
+////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////
+////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL////
+/xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD/
+/xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz
+//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xBy
+BgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2
+//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2
+//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP//
+//8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr/////
+//8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////
+EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//
+EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP/
+/xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIG
+BP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb/
+/xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb/
+/xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM////
+/xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv//////
+/xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8Q
+dwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8Q
+eAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2////////</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1541427013592</attribute>
+</metadata>

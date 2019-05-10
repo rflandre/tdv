@@ -1,0 +1,227 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:38f4c72c-f015-450d-a8c3-8e8a51f25c5f -->
+<metadata name="v_deliveries" path="/shared/Demo/Setup/v_deliveries" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
+  <columns>
+    <column name="Order_ID" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Order_site" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Part_Site" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Order_type" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Line" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Part_refPart_value" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Qautity" nullable="true">
+      <datatype type="FLOAT" minValue="1.1754943508222875E-38" maxValue="3.4028234663852886E38"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="DurDate" nullable="true">
+      <datatype type="DATE"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_SAPType" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="UnitSellingPrice" nullable="true">
+      <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_SO_Currency" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_Lot_Number" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="status" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Part_Name" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_GMIDPart" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_GMIDSCDesc" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Order_customer_id" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Order_Customer_Name" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="U_CountryCode" nullable="true">
+      <datatype type="STRING" maxLength="255"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/Demo/L0_Physical/DataSources/ds_backOffice/Germany/DeliveriesP08_20180404_231506.xls" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="Order.ID">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Order.Site">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Part.Site">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Order.Type">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Line">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Part.ReferencePart.Value">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Quantity">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="DueDate">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="U_SAPType">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="UnitSellingPrice">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="U_SO_Currency">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="U_Lot_Number">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Status">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Part.Name">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="U_GMIDPart">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="U_GMIDSCDesc">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Order.Customer.Id">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="Order.Customer.name">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+      <element name="U_CountryCode">
+        <datatype type="STRING" maxLength="32768"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="SQL" type="STRING">SELECT 
+    CAST(&quot;Order.ID&quot; AS VARCHAR) Order_ID, 
+    CAST(&quot;Order.Site&quot; AS VARCHAR) Order_site,
+   CAST(&quot;Part.Site&quot; AS VARCHAR) Part_Site,
+    CAST(&quot;Order.Type&quot; AS VARCHAR) Order_type,
+    CAST( Line AS VARCHAR) Line,
+    CAST(&quot;Part.ReferencePart.Value&quot; AS VARCHAR )Part_refPart_value,
+    CAST(REPLACE(Quantity, &apos;,&apos;, &apos;&apos;) AS FLOAT) Qautity,
+    PARSE_DATE(DueDate, &apos;dd/mm/yyyy&apos;) DurDate,
+   CAST(U_SAPType AS VARCHAR) U_SAPType,
+	CAST(REPLACE(UnitSellingPrice, &apos;,&apos;, &apos;&apos;) AS INTEGER) UnitSellingPrice,
+    CAST(U_SO_Currency AS VARCHAR) U_SO_Currency,
+    CAST(U_Lot_Number AS VARCHAR) U_Lot_Number,
+    CAST(Status AS VARCHAR) status,
+    CAST(&quot;Part.Name&quot; AS VARCHAR) Part_Name,
+    CAST(U_GMIDPart AS VARCHAR) U_GMIDPart,
+    CAST(U_GMIDSCDesc AS VARCHAR) U_GMIDSCDesc,
+   	CAST(&quot;Order.Customer.Id&quot; AS VARCHAR) Order_customer_id, 
+    CAST(&quot;Order.Customer.name&quot; AS VARCHAR) Order_Customer_Name,
+    CAST(U_CountryCode AS VARCHAR) U_CountryCode
+FROM      
+    /shared/Demo/L0_Physical/DataSources/ds_backOffice/Germany/&quot;DeliveriesP08_20180404_231506.xls&quot; DeliveriesP08_20180404_231506_xls</attribute>
+  <attribute name="cacheDeltaLoader" type="NULL"/>
+  <attribute name="cacheIncremental" type="BOOLEAN">false</attribute>
+  <attribute name="cacheLastTracking" type="STRING">/shared/Sanofi/L0_Physical/DataSources/ds_persist/cache_tracking</attribute>
+  <attribute name="cachePostRefreshCallback" type="NULL"/>
+  <attribute name="cachePreRefreshCallback" type="NULL"/>
+  <attribute name="cachePullBasedIncremental" type="BOOLEAN">false</attribute>
+  <attribute name="cacheRefreshMode" type="STRING">MANUAL</attribute>
+  <attribute name="cacheSnapshotLoader" type="NULL"/>
+  <attribute name="creationDate" type="LONG">1527852476524</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1541426983130</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1527852476524</attribute>
+</metadata>
